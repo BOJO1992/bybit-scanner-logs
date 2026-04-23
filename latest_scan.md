@@ -1,12 +1,508 @@
-Usage: bybit-trader <command> [args]
-
-  status                  Print mode + config summary
-  probe                   Test read-only Bybit connectivity
-  account                 Fetch account snapshot (wallet + positions)
-  market --symbol <SYMB>  Fetch market snapshot (klines)
-  decision --symbol <SYMB> Generate trade idea and order plan (manual trading)
-  plan <json>             Build an OrderPlan from a JSON PlanInput
-  preflight               Check execution readiness and system state
-
-  NOTE: Execution commands (confirm, execute) are disabled for manual trading workflow.
-        Use decision command to generate trade ideas and place orders manually.
+2026-04-23 00:58:23,613 INFO scanner scanner starting: interval=900s auto_execute=True
+2026-04-23 00:58:24,823 INFO app.scanner.regime regime=trending_up BTC=78365.00 EMA50=75703.38 EMA200=72353.83 ADX=22.2 ATR%=1.31
+2026-04-23 00:58:24,835 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 00:58:26,060 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 00:58:33,202 INFO scanner scan: 3/20 symbols produced signals
+2026-04-23 00:58:33,203 INFO scanner top: RAVE/USDT:USDT sell score=0.85
+2026-04-23 00:58:33,225 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 00:58:34,134 INFO scanner AI APPROVE: clean: 0 open, equity=511.37
+2026-04-23 00:58:34,136 INFO scanner halt: False — day 2026-04-23 started at 511.37
+2026-04-23 00:58:34,794 INFO scanner executing: qty=44.343 leverage=10
+2026-04-23 00:58:38,799 INFO scanner cycle done in 15.2s; sleeping 885s
+2026-04-23 01:02:49,074 INFO scanner shutdown signal received
+2026-04-23 01:02:49,831 INFO scanner scanner stopped
+2026-04-23 01:02:50,748 INFO scanner scanner starting: interval=900s auto_execute=False
+2026-04-23 01:02:51,937 INFO app.scanner.regime regime=trending_up BTC=78300.10 EMA50=75700.83 EMA200=72353.19 ADX=22.2 ATR%=1.31
+2026-04-23 01:02:51,947 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 01:02:53,193 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 01:03:00,315 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 01:03:00,315 INFO scanner top: HYPE/USDT:USDT buy score=0.69
+2026-04-23 01:03:00,332 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 01:03:01,175 INFO scanner AI APPROVE: clean: 0 open, equity=511.34
+2026-04-23 01:03:01,175 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-23 01:03:01,838 INFO scanner auto_execute=false; skipping order
+2026-04-23 01:03:01,854 INFO scanner cycle done in 11.1s; sleeping 889s
+2026-04-23 01:07:28,985 INFO scanner shutdown signal received
+2026-04-23 01:07:29,893 INFO scanner scanner stopped
+2026-04-23 01:07:32,795 INFO scanner scanner starting: interval=900s auto_execute=False
+2026-04-23 01:07:33,972 INFO app.scanner.regime regime=trending_up BTC=78357.90 EMA50=75703.10 EMA200=72353.76 ADX=22.2 ATR%=1.31
+2026-04-23 01:07:33,984 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 01:07:35,191 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 01:07:42,354 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 01:07:42,354 INFO scanner top: HYPE/USDT:USDT buy score=0.69
+2026-04-23 01:07:42,373 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 01:07:43,249 INFO scanner AI APPROVE: clean: 0 open, equity=511.33
+2026-04-23 01:07:43,249 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-23 01:07:44,004 INFO scanner auto_execute=false; skipping order
+2026-04-23 01:07:44,018 INFO scanner cycle done in 11.2s; sleeping 889s
+2026-04-23 01:10:12,292 INFO scanner shutdown signal received
+2026-04-23 01:10:13,041 INFO scanner scanner stopped
+2026-04-23 01:10:13,987 INFO scanner scanner starting: interval=900s auto_execute=False
+2026-04-23 01:10:15,151 INFO app.scanner.regime regime=trending_up BTC=78292.00 EMA50=75700.51 EMA200=72353.10 ADX=22.2 ATR%=1.31
+2026-04-23 01:10:15,161 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 01:10:16,375 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 01:10:23,515 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 01:10:23,526 INFO scanner cycle done in 9.5s; sleeping 891s
+2026-04-23 01:11:37,328 INFO scanner shutdown signal received
+2026-04-23 01:11:37,540 INFO scanner scanner stopped
+2026-04-23 01:11:38,354 INFO scanner scanner starting: interval=900s auto_execute=False
+2026-04-23 01:11:39,564 INFO app.scanner.regime regime=trending_up BTC=78203.40 EMA50=75697.04 EMA200=72352.22 ADX=22.2 ATR%=1.31
+2026-04-23 01:11:39,576 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 01:11:40,798 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 01:11:47,914 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 01:11:47,930 INFO scanner cycle done in 9.6s; sleeping 891s
+2026-04-23 01:26:40,475 INFO app.scanner.regime regime=trending_up BTC=78136.80 EMA50=75694.43 EMA200=72351.56 ADX=22.2 ATR%=1.31
+2026-04-23 01:26:40,488 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 01:26:41,788 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 01:26:48,913 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 01:26:48,926 INFO scanner cycle done in 9.9s; sleeping 891s
+2026-04-23 01:41:41,276 INFO app.scanner.regime regime=trending_up BTC=78290.80 EMA50=75700.47 EMA200=72353.09 ADX=22.2 ATR%=1.31
+2026-04-23 01:41:41,292 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 01:41:42,608 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 01:41:49,795 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 01:41:49,812 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 01:56:42,221 INFO app.scanner.regime regime=trending_up BTC=78301.80 EMA50=75700.90 EMA200=72353.20 ADX=22.2 ATR%=1.31
+2026-04-23 01:56:42,239 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 01:56:43,539 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 01:56:50,602 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 01:56:50,602 INFO scanner top: MET/USDT:USDT buy score=0.67
+2026-04-23 01:56:50,631 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 01:56:51,545 INFO scanner AI APPROVE: clean: 0 open, equity=511.37
+2026-04-23 01:56:51,546 INFO scanner halt: False — daily PnL=-0.00% (cap=5.0%)
+2026-04-23 01:56:52,212 INFO scanner auto_execute=false; skipping order
+2026-04-23 01:56:52,227 INFO scanner cycle done in 11.3s; sleeping 889s
+2026-04-23 02:11:42,777 INFO app.scanner.regime regime=trending_up BTC=78231.40 EMA50=75698.14 EMA200=72352.50 ADX=22.2 ATR%=1.31
+2026-04-23 02:11:42,791 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 02:11:44,104 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 02:11:51,180 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 02:11:51,181 INFO scanner top: BTC/USDT:USDT buy score=0.63
+2026-04-23 02:11:51,215 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 02:11:52,291 INFO scanner AI APPROVE: clean: 0 open, equity=511.37
+2026-04-23 02:11:52,292 INFO scanner halt: False — daily PnL=-0.00% (cap=5.0%)
+2026-04-23 02:11:52,985 INFO scanner auto_execute=false; skipping order
+2026-04-23 02:11:53,006 INFO scanner cycle done in 11.6s; sleeping 889s
+2026-04-23 02:26:43,422 INFO app.scanner.regime regime=trending_up BTC=78027.30 EMA50=75690.13 EMA200=72350.47 ADX=22.2 ATR%=1.31
+2026-04-23 02:26:43,435 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 02:26:44,735 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 02:26:51,810 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 02:26:51,829 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 02:41:44,318 INFO app.scanner.regime regime=trending_up BTC=77804.40 EMA50=75681.39 EMA200=72348.25 ADX=22.2 ATR%=1.32
+2026-04-23 02:41:44,332 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 02:41:45,598 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 02:41:52,703 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 02:41:52,717 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 02:56:45,151 INFO app.scanner.regime regime=trending_up BTC=77891.10 EMA50=75684.79 EMA200=72349.12 ADX=22.2 ATR%=1.32
+2026-04-23 02:56:45,163 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 02:56:46,381 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 02:56:53,450 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 02:56:53,464 INFO scanner cycle done in 9.6s; sleeping 891s
+2026-04-23 03:11:45,891 INFO app.scanner.regime regime=trending_up BTC=77786.40 EMA50=75680.69 EMA200=72348.07 ADX=22.2 ATR%=1.32
+2026-04-23 03:11:45,906 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 03:11:47,097 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 03:11:54,232 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 03:11:54,254 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 03:26:46,582 INFO app.scanner.regime regime=trending_up BTC=77598.10 EMA50=75673.30 EMA200=72346.20 ADX=22.2 ATR%=1.32
+2026-04-23 03:26:46,597 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 03:26:47,857 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 03:26:54,982 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 03:26:54,982 INFO scanner top: SPK/USDT:USDT buy score=0.85
+2026-04-23 03:26:55,037 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 03:26:56,034 INFO scanner AI APPROVE: clean: 0 open, equity=511.37
+2026-04-23 03:26:56,034 INFO scanner halt: False — daily PnL=+0.00% (cap=5.0%)
+2026-04-23 03:26:56,894 INFO scanner auto_execute=false; skipping order
+2026-04-23 03:26:56,909 INFO scanner cycle done in 11.5s; sleeping 889s
+2026-04-23 03:41:47,279 INFO app.scanner.regime regime=trending_up BTC=77553.00 EMA50=75671.53 EMA200=72345.75 ADX=22.0 ATR%=1.33
+2026-04-23 03:41:47,292 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 03:41:48,535 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 03:41:55,677 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 03:41:55,678 INFO scanner top: SPK/USDT:USDT buy score=0.85
+2026-04-23 03:41:55,713 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 03:41:56,594 INFO scanner AI APPROVE: clean: 0 open, equity=511.36
+2026-04-23 03:41:56,595 INFO scanner halt: False — daily PnL=-0.00% (cap=5.0%)
+2026-04-23 03:41:57,266 INFO scanner auto_execute=false; skipping order
+2026-04-23 03:41:57,287 INFO scanner cycle done in 11.2s; sleeping 889s
+2026-04-23 03:56:47,661 INFO app.scanner.regime regime=trending_up BTC=77628.60 EMA50=75674.50 EMA200=72346.50 ADX=22.0 ATR%=1.33
+2026-04-23 03:56:47,675 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 03:56:48,984 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 03:56:56,158 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 03:56:56,158 INFO scanner top: SPK/USDT:USDT buy score=0.85
+2026-04-23 03:56:56,189 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 03:56:57,156 INFO scanner AI APPROVE: clean: 0 open, equity=511.36
+2026-04-23 03:56:57,157 INFO scanner halt: False — daily PnL=-0.00% (cap=5.0%)
+2026-04-23 03:56:57,843 INFO scanner auto_execute=false; skipping order
+2026-04-23 03:56:57,862 INFO scanner cycle done in 11.4s; sleeping 889s
+2026-04-23 04:11:48,254 INFO app.scanner.regime regime=trending_up BTC=77817.50 EMA50=75761.22 EMA200=72482.29 ADX=21.7 ATR%=1.25
+2026-04-23 04:11:48,267 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 04:11:49,843 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 04:11:56,919 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 04:11:56,931 INFO scanner cycle done in 9.9s; sleeping 891s
+2026-04-23 04:26:49,364 INFO app.scanner.regime regime=trending_up BTC=77714.10 EMA50=75757.16 EMA200=72481.26 ADX=21.7 ATR%=1.26
+2026-04-23 04:26:49,378 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 04:26:50,630 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 04:26:57,699 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 04:26:57,716 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 04:41:50,244 INFO app.scanner.regime regime=trending_up BTC=77845.80 EMA50=75762.33 EMA200=72482.57 ADX=21.7 ATR%=1.26
+2026-04-23 04:41:50,259 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 04:41:51,519 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 04:41:58,635 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 04:41:58,656 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 04:56:51,099 INFO app.scanner.regime regime=trending_up BTC=77868.90 EMA50=75763.23 EMA200=72482.80 ADX=21.7 ATR%=1.26
+2026-04-23 04:56:51,113 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 04:56:52,390 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 04:56:59,454 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 04:56:59,455 INFO scanner top: HYPE/USDT:USDT buy score=0.61
+2026-04-23 04:56:59,478 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 04:57:00,395 INFO scanner AI APPROVE: clean: 0 open, equity=511.33
+2026-04-23 04:57:00,397 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-23 04:57:01,076 INFO scanner auto_execute=false; skipping order
+2026-04-23 04:57:01,095 INFO scanner cycle done in 11.3s; sleeping 889s
+2026-04-23 05:11:51,605 INFO app.scanner.regime regime=trending_up BTC=77930.00 EMA50=75765.63 EMA200=72483.41 ADX=21.7 ATR%=1.27
+2026-04-23 05:11:51,620 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 05:11:52,819 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 05:11:59,899 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 05:11:59,915 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 05:26:52,425 INFO app.scanner.regime regime=trending_up BTC=77847.40 EMA50=75762.39 EMA200=72482.58 ADX=21.7 ATR%=1.27
+2026-04-23 05:26:52,442 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 05:26:53,706 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 05:27:00,910 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 05:27:00,928 INFO scanner cycle done in 9.9s; sleeping 891s
+2026-04-23 05:41:53,450 INFO app.scanner.regime regime=trending_up BTC=77787.10 EMA50=75760.02 EMA200=72481.98 ADX=21.7 ATR%=1.27
+2026-04-23 05:41:53,465 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 05:41:54,672 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 05:42:01,838 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 05:42:01,854 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 05:56:54,233 INFO app.scanner.regime regime=trending_up BTC=77977.30 EMA50=75767.48 EMA200=72483.88 ADX=21.7 ATR%=1.27
+2026-04-23 05:56:54,253 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 05:56:55,550 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 05:57:02,676 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 05:57:02,692 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 06:11:55,060 INFO app.scanner.regime regime=trending_up BTC=78183.00 EMA50=75775.55 EMA200=72485.92 ADX=21.7 ATR%=1.28
+2026-04-23 06:11:55,075 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 06:11:56,390 INFO app.scanner.universe universe: 20 symbols selected (of 536 candidates)
+2026-04-23 06:12:03,589 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 06:12:03,605 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 06:26:56,194 INFO app.scanner.regime regime=trending_up BTC=78276.80 EMA50=75779.23 EMA200=72486.86 ADX=21.7 ATR%=1.29
+2026-04-23 06:26:56,207 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 06:26:57,469 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 06:27:04,546 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 06:27:04,560 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 06:41:57,074 INFO app.scanner.regime regime=trending_up BTC=78163.70 EMA50=75774.79 EMA200=72485.73 ADX=21.7 ATR%=1.29
+2026-04-23 06:41:57,092 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 06:41:58,375 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 06:42:05,493 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 06:42:05,516 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 06:56:58,061 INFO app.scanner.regime regime=trending_up BTC=78148.00 EMA50=75774.18 EMA200=72485.58 ADX=21.7 ATR%=1.29
+2026-04-23 06:56:58,079 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 06:56:59,272 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 06:57:06,420 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 06:57:06,421 INFO scanner top: STRK/USDT:USDT buy score=0.75
+2026-04-23 06:57:06,643 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 06:57:08,616 INFO scanner AI APPROVE: clean: 0 open, equity=511.38
+2026-04-23 06:57:08,617 INFO scanner halt: False — daily PnL=+0.00% (cap=5.0%)
+2026-04-23 06:57:09,285 INFO scanner auto_execute=false; skipping order
+2026-04-23 06:57:09,298 INFO scanner cycle done in 12.6s; sleeping 888s
+2026-04-23 07:11:59,057 INFO app.scanner.regime regime=trending_up BTC=78135.20 EMA50=75773.67 EMA200=72485.45 ADX=21.7 ATR%=1.29
+2026-04-23 07:11:59,072 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 07:12:00,300 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 07:12:07,390 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 07:12:07,408 INFO scanner cycle done in 10.0s; sleeping 891s
+2026-04-23 07:26:59,907 INFO app.scanner.regime regime=trending_up BTC=78105.20 EMA50=75772.50 EMA200=72485.15 ADX=21.7 ATR%=1.29
+2026-04-23 07:26:59,923 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 07:27:01,123 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 07:27:08,279 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 07:27:08,298 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 07:42:00,766 INFO app.scanner.regime regime=trending_up BTC=78079.60 EMA50=75771.49 EMA200=72484.90 ADX=21.7 ATR%=1.29
+2026-04-23 07:42:00,780 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 07:42:01,994 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 07:42:09,149 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 07:42:09,165 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 07:57:01,673 INFO app.scanner.regime regime=trending_up BTC=77982.50 EMA50=75767.69 EMA200=72483.93 ADX=21.7 ATR%=1.29
+2026-04-23 07:57:01,689 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 07:57:02,919 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 07:57:10,114 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 07:57:10,129 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 08:12:02,528 INFO app.scanner.regime regime=trending_up BTC=78022.20 EMA50=75857.45 EMA200=72652.45 ADX=21.4 ATR%=1.22
+2026-04-23 08:12:02,546 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 08:12:03,839 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 08:12:11,032 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 08:12:11,053 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 08:27:03,461 INFO app.scanner.regime regime=trending_up BTC=77987.90 EMA50=75856.11 EMA200=72652.11 ADX=21.4 ATR%=1.23
+2026-04-23 08:27:03,478 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 08:27:04,770 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 08:27:11,947 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 08:27:11,965 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 08:42:04,380 INFO app.scanner.regime regime=trending_up BTC=77745.80 EMA50=75846.61 EMA200=72649.70 ADX=21.4 ATR%=1.25
+2026-04-23 08:42:04,399 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 08:42:05,687 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 08:42:12,843 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 08:42:12,862 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 08:57:05,270 INFO app.scanner.regime regime=trending_up BTC=77819.40 EMA50=75849.50 EMA200=72650.43 ADX=21.4 ATR%=1.25
+2026-04-23 08:57:05,285 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 08:57:06,575 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 08:57:13,722 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 08:57:13,737 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 09:12:06,221 INFO app.scanner.regime regime=trending_up BTC=77472.90 EMA50=75835.91 EMA200=72646.98 ADX=21.0 ATR%=1.28
+2026-04-23 09:12:06,235 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 09:12:07,460 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 09:12:14,563 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 09:12:14,578 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 09:27:07,183 INFO app.scanner.regime regime=trending_up BTC=77549.00 EMA50=75838.89 EMA200=72647.74 ADX=21.0 ATR%=1.28
+2026-04-23 09:27:07,198 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 09:27:08,411 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 09:27:15,523 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 09:27:15,546 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 09:42:08,091 INFO app.scanner.regime regime=trending_up BTC=77694.00 EMA50=75844.58 EMA200=72649.18 ADX=21.0 ATR%=1.28
+2026-04-23 09:42:08,106 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 09:42:09,362 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 09:42:16,505 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 09:42:16,522 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 09:57:09,058 INFO app.scanner.regime regime=trending_up BTC=77595.20 EMA50=75840.71 EMA200=72648.20 ADX=21.0 ATR%=1.28
+2026-04-23 09:57:09,072 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 09:57:10,301 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 09:57:17,378 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 09:57:17,378 INFO scanner top: ETH/USDT:USDT sell score=0.75
+2026-04-23 09:57:17,587 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 09:57:19,810 INFO scanner AI APPROVE: clean: 0 open, equity=511.29
+2026-04-23 09:57:19,811 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-23 09:57:20,497 INFO scanner auto_execute=false; skipping order
+2026-04-23 09:57:20,518 INFO scanner cycle done in 12.9s; sleeping 888s
+2026-04-23 10:12:10,068 INFO app.scanner.regime regime=trending_up BTC=77211.20 EMA50=75825.65 EMA200=72644.38 ADX=20.7 ATR%=1.31
+2026-04-23 10:12:10,081 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 10:12:11,284 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 10:12:18,384 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 10:12:18,406 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 10:27:10,892 INFO app.scanner.regime regime=trending_up BTC=77311.10 EMA50=75829.56 EMA200=72645.37 ADX=20.7 ATR%=1.31
+2026-04-23 10:27:10,905 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 10:27:12,186 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 10:27:19,282 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 10:27:19,299 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 10:42:11,800 INFO app.scanner.regime regime=trending_up BTC=77341.60 EMA50=75830.76 EMA200=72645.68 ADX=20.7 ATR%=1.31
+2026-04-23 10:42:11,813 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 10:42:13,139 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 10:42:20,227 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 10:42:20,227 INFO scanner top: SPK/USDT:USDT buy score=0.75
+2026-04-23 10:42:20,246 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 10:42:21,181 INFO scanner AI APPROVE: clean: 0 open, equity=511.32
+2026-04-23 10:42:21,181 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-23 10:42:22,520 INFO scanner auto_execute=false; skipping order
+2026-04-23 10:42:22,537 INFO scanner cycle done in 12.1s; sleeping 888s
+2026-04-23 10:57:12,112 INFO app.scanner.regime regime=trending_up BTC=77373.50 EMA50=75832.01 EMA200=72645.99 ADX=20.7 ATR%=1.31
+2026-04-23 10:57:12,135 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 10:57:13,386 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 10:57:20,481 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 10:57:20,481 INFO scanner top: SPK/USDT:USDT buy score=0.85
+2026-04-23 10:57:20,512 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 10:57:21,500 INFO scanner AI APPROVE: clean: 0 open, equity=511.33
+2026-04-23 10:57:21,501 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-23 10:57:22,166 INFO scanner auto_execute=false; skipping order
+2026-04-23 10:57:22,188 INFO scanner cycle done in 11.5s; sleeping 889s
+2026-04-23 11:12:12,751 INFO app.scanner.regime regime=trending_up BTC=77389.40 EMA50=75832.63 EMA200=72646.15 ADX=20.7 ATR%=1.31
+2026-04-23 11:12:12,766 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 11:12:14,022 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 11:12:21,113 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 11:12:21,126 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 11:13:33,910 INFO scanner shutdown signal received
+2026-04-23 11:13:34,137 INFO scanner scanner stopped
+2026-04-23 11:13:36,482 INFO scanner scanner starting: interval=900s auto_execute=False
+2026-04-23 11:13:37,706 INFO app.scanner.regime regime=trending_up BTC=77372.20 EMA50=75831.96 EMA200=72645.98 ADX=20.7 ATR%=1.31
+2026-04-23 11:13:37,715 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 11:13:38,949 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 11:13:46,087 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 11:13:46,108 INFO scanner cycle done in 9.6s; sleeping 891s
+2026-04-23 11:16:18,159 INFO scanner shutdown signal received
+2026-04-23 11:16:19,132 INFO scanner scanner stopped
+2026-04-23 11:16:20,103 INFO scanner scanner starting: interval=900s auto_execute=False
+2026-04-23 11:16:21,315 INFO app.scanner.regime regime=trending_up BTC=77411.10 EMA50=75833.49 EMA200=72646.37 ADX=20.7 ATR%=1.31
+2026-04-23 11:16:21,327 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 11:16:22,560 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 11:16:29,757 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 11:16:29,770 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 11:23:06,966 INFO scanner shutdown signal received
+2026-04-23 11:23:07,821 INFO scanner scanner stopped
+2026-04-23 11:23:08,631 INFO scanner scanner starting: interval=900s auto_execute=False
+2026-04-23 11:23:09,836 INFO app.scanner.regime regime=trending_up BTC=77442.90 EMA50=75834.73 EMA200=72646.69 ADX=20.7 ATR%=1.31
+2026-04-23 11:23:09,848 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 11:23:11,252 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 11:23:18,410 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 11:23:18,424 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 11:24:09,640 INFO scanner shutdown signal received
+2026-04-23 11:24:10,432 INFO scanner scanner stopped
+2026-04-23 11:24:11,319 INFO scanner scanner starting: interval=900s auto_execute=False
+2026-04-23 11:24:12,523 INFO app.scanner.regime regime=trending_up BTC=77419.80 EMA50=75833.83 EMA200=72646.46 ADX=20.7 ATR%=1.31
+2026-04-23 11:24:12,537 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 11:24:13,751 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 11:24:21,038 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 11:24:21,057 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 11:26:56,816 INFO scanner shutdown signal received
+2026-04-23 11:26:57,080 INFO scanner scanner stopped
+2026-04-23 11:26:58,112 INFO scanner scanner starting: interval=900s auto_execute=False
+2026-04-23 11:26:59,287 INFO app.scanner.regime regime=trending_up BTC=77435.40 EMA50=75834.44 EMA200=72646.61 ADX=20.7 ATR%=1.31
+2026-04-23 11:26:59,297 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 11:27:00,521 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 11:27:07,750 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 11:27:07,750 INFO scanner top: HYPE/USDT:USDT buy score=0.63
+2026-04-23 11:27:07,777 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 11:27:08,662 INFO scanner AI APPROVE: clean: 0 open, equity=511.31
+2026-04-23 11:27:08,663 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-23 11:27:08,668 INFO scanner cooldown skip: HYPE/USDT:USDT buy sent at 2026-04-23T11:27:08.663605+00:00
+2026-04-23 11:27:08,681 INFO scanner cycle done in 10.6s; sleeping 890s
+2026-04-23 11:42:00,062 INFO app.scanner.regime regime=trending_up BTC=77514.80 EMA50=75837.55 EMA200=72647.40 ADX=20.7 ATR%=1.30
+2026-04-23 11:42:00,077 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 11:42:01,327 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 11:42:09,207 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 11:42:09,222 INFO scanner cycle done in 10.4s; sleeping 890s
+2026-04-23 11:57:00,603 INFO app.scanner.regime regime=trending_up BTC=77678.70 EMA50=75843.98 EMA200=72649.03 ADX=20.7 ATR%=1.30
+2026-04-23 11:57:00,618 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 11:57:01,879 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 11:57:09,054 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 11:57:09,078 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 12:12:01,494 INFO app.scanner.regime regime=ranging BTC=77732.00 EMA50=75916.95 EMA200=72710.54 ADX=19.8 ATR%=1.22
+2026-04-23 12:12:01,511 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 12:12:02,833 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 12:12:11,143 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 12:12:11,160 INFO scanner cycle done in 11.0s; sleeping 890s
+2026-04-23 12:27:02,705 INFO app.scanner.regime regime=ranging BTC=77694.90 EMA50=75915.49 EMA200=72710.18 ADX=19.8 ATR%=1.23
+2026-04-23 12:27:02,721 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 12:27:03,973 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 12:27:12,025 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 12:27:12,058 INFO scanner cycle done in 10.8s; sleeping 890s
+2026-04-23 12:42:03,490 INFO app.scanner.regime regime=ranging BTC=77769.90 EMA50=75918.43 EMA200=72710.92 ADX=19.8 ATR%=1.23
+2026-04-23 12:42:03,507 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 12:42:04,776 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 12:42:11,912 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 12:42:11,936 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 12:57:04,560 INFO app.scanner.regime regime=ranging BTC=77733.50 EMA50=75917.01 EMA200=72710.56 ADX=19.8 ATR%=1.24
+2026-04-23 12:57:04,575 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 12:57:05,798 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 12:57:14,029 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 12:57:14,043 INFO scanner cycle done in 11.0s; sleeping 890s
+2026-04-23 13:12:05,597 INFO app.scanner.regime regime=ranging BTC=77715.60 EMA50=75916.30 EMA200=72710.38 ADX=19.8 ATR%=1.25
+2026-04-23 13:12:05,612 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 13:12:06,942 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 13:12:14,099 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 13:12:14,116 INFO scanner cycle done in 9.9s; sleeping 891s
+2026-04-23 13:27:06,643 INFO app.scanner.regime regime=ranging BTC=77607.40 EMA50=75912.06 EMA200=72709.30 ADX=19.8 ATR%=1.25
+2026-04-23 13:27:06,657 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 13:27:08,018 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 13:27:15,176 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 13:27:15,199 INFO scanner cycle done in 10.0s; sleeping 891s
+2026-04-23 13:42:07,872 INFO app.scanner.regime regime=ranging BTC=77567.40 EMA50=75910.49 EMA200=72708.91 ADX=19.8 ATR%=1.25
+2026-04-23 13:42:07,886 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 13:42:09,145 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 13:42:16,298 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 13:42:16,316 INFO scanner cycle done in 10.0s; sleeping 891s
+2026-04-23 13:57:08,715 INFO app.scanner.regime regime=ranging BTC=77445.00 EMA50=75905.69 EMA200=72707.69 ADX=19.8 ATR%=1.26
+2026-04-23 13:57:08,729 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 13:57:09,966 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 13:57:17,117 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 13:57:17,134 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 14:12:09,568 INFO app.scanner.regime regime=ranging BTC=77483.50 EMA50=75907.20 EMA200=72708.07 ADX=19.8 ATR%=1.26
+2026-04-23 14:12:09,583 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 14:12:10,832 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 14:12:17,980 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 14:12:17,995 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 14:27:10,426 INFO app.scanner.regime regime=ranging BTC=77791.00 EMA50=75919.26 EMA200=72711.13 ADX=19.8 ATR%=1.26
+2026-04-23 14:27:10,444 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 14:27:11,705 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 14:27:18,902 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 14:27:18,927 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 14:42:11,365 INFO app.scanner.regime regime=ranging BTC=77752.90 EMA50=75917.77 EMA200=72710.75 ADX=19.8 ATR%=1.26
+2026-04-23 14:42:11,381 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 14:42:12,680 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 14:42:19,895 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 14:42:19,915 INFO scanner cycle done in 9.9s; sleeping 891s
+2026-04-23 14:57:12,327 INFO app.scanner.regime regime=ranging BTC=78152.20 EMA50=75933.43 EMA200=72714.73 ADX=19.8 ATR%=1.28
+2026-04-23 14:57:12,343 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 14:57:13,603 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 14:57:20,780 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 14:57:20,804 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 15:12:13,195 INFO app.scanner.regime regime=ranging BTC=78069.40 EMA50=75930.18 EMA200=72713.90 ADX=19.8 ATR%=1.28
+2026-04-23 15:12:13,209 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 15:12:14,480 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 15:12:21,618 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 15:12:21,632 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 15:27:14,093 INFO app.scanner.regime regime=trending_up BTC=78438.30 EMA50=75944.65 EMA200=72717.57 ADX=20.3 ATR%=1.31
+2026-04-23 15:27:14,110 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 15:27:15,376 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 15:27:22,515 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 15:27:22,529 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 15:42:14,904 INFO app.scanner.regime regime=trending_up BTC=78466.20 EMA50=75945.74 EMA200=72717.85 ADX=20.3 ATR%=1.31
+2026-04-23 15:42:14,921 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 15:42:16,168 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 15:42:23,364 INFO scanner scan: 1/20 symbols produced signals
+2026-04-23 15:42:23,364 INFO scanner top: DOGE/USDT:USDT buy score=0.75
+2026-04-23 15:42:23,392 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 15:42:24,309 INFO scanner AI APPROVE: clean: 0 open, equity=505.77
+2026-04-23 15:42:24,310 INFO scanner halt: False — daily PnL=-1.10% (cap=5.0%)
+2026-04-23 15:42:24,320 INFO scanner cooldown skip: DOGE/USDT:USDT buy sent at 2026-04-23T15:42:24.313532+00:00
+2026-04-23 15:42:24,338 INFO scanner cycle done in 10.7s; sleeping 890s
+2026-04-23 15:57:15,703 INFO app.scanner.regime regime=trending_up BTC=78338.00 EMA50=75940.71 EMA200=72716.57 ADX=20.3 ATR%=1.32
+2026-04-23 15:57:15,717 INFO scanner regime=trending_up; strategies=['trend_ema_rsi_macd', 'breakout_confirmation']
+2026-04-23 15:57:16,977 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 15:57:24,132 INFO scanner scan: 2/20 symbols produced signals
+2026-04-23 15:57:24,132 INFO scanner top: MOVR/USDT:USDT buy score=0.85
+2026-04-23 15:57:24,158 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'list_top_symbols', 'read_recent_logs']
+2026-04-23 15:57:25,062 INFO scanner AI APPROVE: clean: 0 open, equity=505.73
+2026-04-23 15:57:25,062 INFO scanner halt: False — daily PnL=-1.10% (cap=5.0%)
+2026-04-23 15:57:25,068 INFO scanner cooldown skip: MOVR/USDT:USDT buy sent at 2026-04-23T15:57:25.063335+00:00
+2026-04-23 15:57:25,081 INFO scanner cycle done in 10.6s; sleeping 890s
+2026-04-23 16:12:16,473 INFO app.scanner.regime regime=ranging BTC=78328.30 EMA50=76034.39 EMA200=72725.83 ADX=19.9 ATR%=1.24
+2026-04-23 16:12:16,489 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 16:12:17,734 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 16:12:24,884 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 16:12:24,909 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 16:27:17,256 INFO app.scanner.regime regime=ranging BTC=78395.00 EMA50=76037.00 EMA200=72726.49 ADX=19.9 ATR%=1.25
+2026-04-23 16:27:17,272 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 16:27:18,525 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 16:27:25,699 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 16:27:25,718 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 16:42:18,074 INFO app.scanner.regime regime=ranging BTC=78298.40 EMA50=76033.21 EMA200=72725.53 ADX=19.9 ATR%=1.25
+2026-04-23 16:42:18,090 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 16:42:19,312 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 16:42:26,498 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 16:42:26,516 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 16:57:18,900 INFO app.scanner.regime regime=ranging BTC=78069.90 EMA50=76024.25 EMA200=72723.25 ADX=19.9 ATR%=1.27
+2026-04-23 16:57:18,917 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 16:57:20,178 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 16:57:27,343 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 16:57:27,363 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 17:12:19,792 INFO app.scanner.regime regime=ranging BTC=77854.30 EMA50=76015.80 EMA200=72721.11 ADX=19.9 ATR%=1.31
+2026-04-23 17:12:19,812 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 17:12:21,073 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 17:12:28,215 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 17:12:28,230 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 17:27:20,765 INFO app.scanner.regime regime=ranging BTC=77728.80 EMA50=76010.88 EMA200=72719.86 ADX=19.9 ATR%=1.32
+2026-04-23 17:27:20,781 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 17:27:22,010 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 17:27:29,197 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 17:27:29,214 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 17:42:21,568 INFO app.scanner.regime regime=ranging BTC=76961.60 EMA50=75980.79 EMA200=72712.23 ADX=19.3 ATR%=1.39
+2026-04-23 17:42:21,583 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 17:42:22,843 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 17:42:30,029 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 17:42:30,049 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 17:57:22,730 INFO app.scanner.regime regime=ranging BTC=77718.50 EMA50=76010.47 EMA200=72719.76 ADX=19.3 ATR%=1.38
+2026-04-23 17:57:22,766 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 17:57:24,389 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 17:57:31,588 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 17:57:31,616 INFO scanner cycle done in 10.4s; sleeping 890s
+2026-04-23 18:12:23,112 INFO app.scanner.regime regime=ranging BTC=78033.90 EMA50=76022.84 EMA200=72722.90 ADX=19.3 ATR%=1.37
+2026-04-23 18:12:23,133 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 18:12:24,369 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 18:12:31,513 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 18:12:31,532 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 18:27:23,954 INFO app.scanner.regime regime=ranging BTC=77891.70 EMA50=76017.26 EMA200=72721.48 ADX=19.3 ATR%=1.37
+2026-04-23 18:27:23,970 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 18:27:25,218 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 18:27:32,360 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 18:27:32,375 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-23 18:42:24,830 INFO app.scanner.regime regime=ranging BTC=78016.10 EMA50=76022.14 EMA200=72722.72 ADX=19.3 ATR%=1.37
+2026-04-23 18:42:24,847 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 18:42:26,104 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 18:42:33,256 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 18:42:33,276 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-23 18:57:25,710 INFO app.scanner.regime regime=ranging BTC=77749.00 EMA50=76011.67 EMA200=72720.06 ADX=19.3 ATR%=1.38
+2026-04-23 18:57:25,725 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-23 18:57:26,990 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-23 18:57:34,177 INFO scanner scan: 0/20 symbols produced signals
+2026-04-23 18:57:34,197 INFO scanner cycle done in 9.8s; sleeping 891s
