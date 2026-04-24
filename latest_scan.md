@@ -866,3 +866,8 @@
 2026-04-24 10:58:26,010 INFO scanner halt: False — daily PnL=+0.19% (cap=5.0%)
 2026-04-24 10:58:26,017 INFO scanner cooldown skip: KAT/USDT:USDT sell sent at 2026-04-24T10:58:26.012280+00:00
 2026-04-24 10:58:26,033 INFO scanner cycle done in 10.4s; sleeping 890s
+2026-04-24 11:13:17,369 INFO app.scanner.regime regime=ranging BTC=78108.20 EMA50=76289.90 EMA200=72872.51 ADX=16.9 ATR%=1.29
+2026-04-24 11:13:17,385 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-24 11:13:18,726 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-24 11:13:25,877 INFO scanner scan: 0/20 symbols produced signals
+2026-04-24 11:13:25,897 INFO scanner cycle done in 9.7s; sleeping 891s
