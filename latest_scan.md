@@ -1724,3 +1724,13 @@
 2026-04-25 22:15:12,136 WARNING app.scanner.signals ohlcv fetch failed for RAVE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777155312130}
 2026-04-25 22:15:13,646 INFO scanner scan: 0/20 symbols produced signals
 2026-04-25 22:15:13,662 INFO scanner cycle done in 9.6s; sleeping 891s
+2026-04-25 22:30:06,147 INFO app.scanner.regime regime=ranging BTC=77531.10 EMA50=76665.40 EMA200=73104.01 ADX=12.9 ATR%=0.95
+2026-04-25 22:30:06,167 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-25 22:30:07,387 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-25 22:30:10,360 WARNING app.scanner.signals ohlcv fetch failed for KAT/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777156210354}
+2026-04-25 22:30:10,758 WARNING app.scanner.signals ohlcv fetch failed for BSB/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777156210752}
+2026-04-25 22:30:12,060 WARNING app.scanner.signals ohlcv fetch failed for RAVE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777156212054}
+2026-04-25 22:30:12,261 WARNING app.scanner.signals ohlcv fetch failed for HYPE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777156212255}
+2026-04-25 22:30:12,559 WARNING app.scanner.signals ohlcv fetch failed for 1000PEPE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777156212554}
+2026-04-25 22:30:13,768 INFO scanner scan: 0/20 symbols produced signals
+2026-04-25 22:30:13,784 INFO scanner cycle done in 9.0s; sleeping 892s
