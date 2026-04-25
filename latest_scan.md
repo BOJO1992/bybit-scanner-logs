@@ -1655,3 +1655,12 @@
 2026-04-25 20:15:06,570 WARNING app.scanner.signals ohlcv fetch failed for CHIP/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777148106566}
 2026-04-25 20:15:08,982 INFO scanner scan: 0/20 symbols produced signals
 2026-04-25 20:15:09,000 INFO scanner cycle done in 9.5s; sleeping 891s
+2026-04-25 20:30:01,561 INFO app.scanner.regime regime=ranging BTC=77379.30 EMA50=76659.45 EMA200=73102.50 ADX=12.7 ATR%=0.94
+2026-04-25 20:30:01,598 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-25 20:30:02,880 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-25 20:30:06,075 WARNING app.scanner.signals ohlcv fetch failed for TRUMP/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777149006072}
+2026-04-25 20:30:06,177 WARNING app.scanner.signals ohlcv fetch failed for DOGE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777149006172}
+2026-04-25 20:30:07,778 WARNING app.scanner.signals ohlcv fetch failed for HYPE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777149007775}
+2026-04-25 20:30:09,085 WARNING app.scanner.signals ohlcv fetch failed for ZEC/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777149009082}
+2026-04-25 20:30:09,393 INFO scanner scan: 0/20 symbols produced signals
+2026-04-25 20:30:09,412 INFO scanner cycle done in 9.3s; sleeping 891s
