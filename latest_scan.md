@@ -1631,3 +1631,9 @@
 2026-04-25 19:44:59,120 INFO app.scanner.regime regime=ranging BTC=77143.90 EMA50=76624.78 EMA200=73059.04 ADX=13.4 ATR%=1.00
 2026-04-25 19:44:59,134 INFO scanner regime=ranging; strategies=['mean_reversion']
 2026-04-25 19:45:00,357 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-25 19:45:07,178 WARNING app.scanner.signals ohlcv fetch failed for ZEC/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777146307174}
+2026-04-25 19:45:07,484 INFO scanner scan: 0/20 symbols produced signals
+2026-04-25 19:45:07,502 INFO scanner cycle done in 9.6s; sleeping 891s
+2026-04-25 19:59:59,849 INFO app.scanner.regime regime=ranging BTC=77278.80 EMA50=76630.07 EMA200=73060.39 ADX=13.4 ATR%=1.00
+2026-04-25 19:59:59,865 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-25 20:00:01,126 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
