@@ -1346,3 +1346,13 @@
 2026-04-25 08:59:36,825 INFO scanner halt: False — daily PnL=+0.32% (cap=5.0%)
 2026-04-25 08:59:36,830 INFO scanner cooldown skip: AXS/USDT:USDT sell sent at 2026-04-25T08:59:36.825550+00:00
 2026-04-25 08:59:36,849 INFO scanner cycle done in 10.4s; sleeping 890s
+2026-04-25 09:14:28,271 INFO app.scanner.regime regime=ranging BTC=77594.40 EMA50=76573.62 EMA200=72993.95 ADX=14.5 ATR%=1.05
+2026-04-25 09:14:28,288 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-25 09:14:29,474 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-25 09:14:36,579 INFO scanner scan: 1/20 symbols produced signals
+2026-04-25 09:14:36,579 INFO scanner top: AXS/USDT:USDT sell score=0.82
+2026-04-25 09:14:36,589 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs']
+2026-04-25 09:14:37,265 INFO scanner AI APPROVE: clean: 1 open, equity=488.46
+2026-04-25 09:14:37,266 INFO scanner halt: False — daily PnL=+0.46% (cap=5.0%)
+2026-04-25 09:14:37,271 INFO scanner cooldown skip: AXS/USDT:USDT sell sent at 2026-04-25T09:14:37.266889+00:00
+2026-04-25 09:14:37,283 INFO scanner cycle done in 10.3s; sleeping 890s
