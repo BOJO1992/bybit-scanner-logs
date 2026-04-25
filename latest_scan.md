@@ -1734,3 +1734,10 @@
 2026-04-25 22:30:12,559 WARNING app.scanner.signals ohlcv fetch failed for 1000PEPE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777156212554}
 2026-04-25 22:30:13,768 INFO scanner scan: 0/20 symbols produced signals
 2026-04-25 22:30:13,784 INFO scanner cycle done in 9.0s; sleeping 892s
+2026-04-25 22:45:07,192 INFO app.scanner.regime regime=ranging BTC=77542.20 EMA50=76665.84 EMA200=73104.12 ADX=13.0 ATR%=0.96
+2026-04-25 22:45:07,206 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-25 22:45:08,418 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-25 22:45:11,475 WARNING app.scanner.signals ohlcv fetch failed for KAT/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777157111471}
+2026-04-25 22:45:14,179 WARNING app.scanner.signals ohlcv fetch failed for 1000PEPE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777157114176}
+2026-04-25 22:45:15,388 INFO scanner scan: 0/20 symbols produced signals
+2026-04-25 22:45:15,403 INFO scanner cycle done in 9.5s; sleeping 891s
