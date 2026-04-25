@@ -1536,3 +1536,8 @@
 2026-04-25 14:59:53,704 INFO scanner halt: False — daily PnL=-0.10% (cap=5.0%)
 2026-04-25 14:59:53,710 INFO scanner cooldown skip: TRUMP/USDT:USDT buy sent at 2026-04-25T14:59:53.705463+00:00
 2026-04-25 14:59:53,726 INFO scanner cycle done in 10.6s; sleeping 890s
+2026-04-25 15:14:45,138 INFO app.scanner.regime regime=ranging BTC=77630.80 EMA50=76617.07 EMA200=73022.20 ADX=14.7 ATR%=1.02
+2026-04-25 15:14:45,153 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-25 15:14:46,410 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-25 15:14:53,562 INFO scanner scan: 0/20 symbols produced signals
+2026-04-25 15:14:53,576 INFO scanner cycle done in 9.7s; sleeping 891s
