@@ -1650,3 +1650,8 @@
 2026-04-25 20:00:07,417 INFO scanner cycle done in 8.8s; sleeping 892s
 2026-04-25 20:15:00,850 INFO app.scanner.regime regime=ranging BTC=77305.40 EMA50=76656.55 EMA200=73101.76 ADX=12.7 ATR%=0.93
 2026-04-25 20:15:00,864 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-25 20:15:02,105 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-25 20:15:06,070 WARNING app.scanner.signals ohlcv fetch failed for BSB/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777148106067}
+2026-04-25 20:15:06,570 WARNING app.scanner.signals ohlcv fetch failed for CHIP/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777148106566}
+2026-04-25 20:15:08,982 INFO scanner scan: 0/20 symbols produced signals
+2026-04-25 20:15:09,000 INFO scanner cycle done in 9.5s; sleeping 891s
