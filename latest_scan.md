@@ -1664,3 +1664,9 @@
 2026-04-25 20:30:09,085 WARNING app.scanner.signals ohlcv fetch failed for ZEC/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777149009082}
 2026-04-25 20:30:09,393 INFO scanner scan: 0/20 symbols produced signals
 2026-04-25 20:30:09,412 INFO scanner cycle done in 9.3s; sleeping 891s
+2026-04-25 20:45:01,886 INFO app.scanner.regime regime=ranging BTC=77357.00 EMA50=76658.58 EMA200=73102.28 ADX=12.7 ATR%=0.94
+2026-04-25 20:45:01,914 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-25 20:45:03,157 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-25 20:45:06,205 WARNING app.scanner.signals ohlcv fetch failed for TRUMP/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777149906202}
+2026-04-25 20:45:10,124 INFO scanner scan: 0/20 symbols produced signals
+2026-04-25 20:45:10,141 INFO scanner cycle done in 9.6s; sleeping 891s
