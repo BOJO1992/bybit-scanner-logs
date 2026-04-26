@@ -1786,3 +1786,8 @@
 2026-04-26 00:15:13,980 WARNING app.scanner.signals ohlcv fetch failed for AXS/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777162513974}
 2026-04-26 00:15:18,794 INFO scanner scan: 0/20 symbols produced signals
 2026-04-26 00:15:18,808 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-26 00:30:11,138 INFO app.scanner.regime regime=ranging BTC=77443.30 EMA50=76698.18 EMA200=73135.17 ADX=12.8 ATR%=0.91
+2026-04-26 00:30:11,152 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-26 00:30:12,477 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-26 00:30:19,637 INFO scanner scan: 0/20 symbols produced signals
+2026-04-26 00:30:19,660 INFO scanner cycle done in 9.7s; sleeping 891s
