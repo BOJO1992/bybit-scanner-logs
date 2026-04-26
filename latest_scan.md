@@ -2018,3 +2018,8 @@
 2026-04-26 11:30:54,942 INFO scanner halt: False — day 2026-04-26 started at 478.77
 2026-04-26 11:30:54,954 INFO scanner cooldown skip: ADA/USDT:USDT sell sent at 2026-04-26T11:30:54.946006+00:00
 2026-04-26 11:30:54,982 INFO scanner cycle done in 10.9s; sleeping 890s
+2026-04-26 11:45:46,384 INFO app.scanner.regime regime=ranging BTC=78012.30 EMA50=76798.22 EMA200=73233.19 ADX=14.1 ATR%=0.89
+2026-04-26 11:45:46,401 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-26 11:45:47,748 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-26 11:45:54,824 INFO scanner scan: 0/20 symbols produced signals
+2026-04-26 11:45:54,841 INFO scanner cycle done in 9.7s; sleeping 891s
