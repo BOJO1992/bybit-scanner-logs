@@ -2008,3 +2008,13 @@
 2026-04-26 11:15:45,822 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
 2026-04-26 11:15:52,893 INFO scanner scan: 0/20 symbols produced signals
 2026-04-26 11:15:52,909 INFO scanner cycle done in 9.6s; sleeping 891s
+2026-04-26 11:30:45,319 INFO app.scanner.regime regime=ranging BTC=78109.50 EMA50=76802.03 EMA200=73234.16 ADX=14.1 ATR%=0.89
+2026-04-26 11:30:45,337 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-26 11:30:46,597 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-26 11:30:53,694 INFO scanner scan: 1/20 symbols produced signals
+2026-04-26 11:30:53,694 INFO scanner top: ADA/USDT:USDT sell score=0.61
+2026-04-26 11:30:53,735 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs']
+2026-04-26 11:30:54,938 INFO scanner AI APPROVE: clean: 0 open, equity=478.77
+2026-04-26 11:30:54,942 INFO scanner halt: False — day 2026-04-26 started at 478.77
+2026-04-26 11:30:54,954 INFO scanner cooldown skip: ADA/USDT:USDT sell sent at 2026-04-26T11:30:54.946006+00:00
+2026-04-26 11:30:54,982 INFO scanner cycle done in 10.9s; sleeping 890s
