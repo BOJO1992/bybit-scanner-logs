@@ -2391,3 +2391,8 @@
 2026-04-27 03:40:58,702 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
 2026-04-27 03:40:58,708 INFO scanner cooldown skip: DOGE/USDT:USDT sell sent at 2026-04-27T03:40:58.703457+00:00
 2026-04-27 03:40:58,721 INFO scanner cycle done in 11.2s; sleeping 889s
+2026-04-27 03:55:49,983 INFO app.scanner.regime regime=ranging BTC=79092.60 EMA50=77050.54 EMA200=73412.29 ADX=18.0 ATR%=0.94
+2026-04-27 03:55:50,030 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-27 03:55:52,364 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-27 03:55:59,982 INFO scanner scan: 0/20 symbols produced signals
+2026-04-27 03:56:00,057 INFO scanner cycle done in 11.9s; sleeping 889s
