@@ -2651,3 +2651,13 @@
 2026-04-27 15:41:41,628 INFO scanner halt: True — daily loss 27.37% >= 5.0% (start=482.25, now=350.27)
 2026-04-27 15:41:41,633 INFO scanner cooldown skip: XRP/USDT:USDT buy sent at 2026-04-27T15:41:41.628965+00:00
 2026-04-27 15:41:41,648 INFO scanner cycle done in 10.3s; sleeping 890s
+2026-04-27 15:56:33,000 INFO app.scanner.regime regime=ranging BTC=76703.20 EMA50=77082.55 EMA200=73529.50 ADX=16.8 ATR%=1.11
+2026-04-27 15:56:33,014 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-27 15:56:34,283 INFO app.scanner.universe universe: 20 symbols selected (of 540 candidates)
+2026-04-27 15:56:41,431 INFO scanner scan: 1/20 symbols produced signals
+2026-04-27 15:56:41,431 INFO scanner top: XRP/USDT:USDT buy score=0.67
+2026-04-27 15:56:41,500 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs', 'get_orderbook', 'get_funding_rate', 'get_open_interest']
+2026-04-27 15:56:42,177 INFO scanner AI APPROVE: clean: 0 open, equity=350.26
+2026-04-27 15:56:42,178 INFO scanner halt: True — daily loss 27.37% >= 5.0% (start=482.25, now=350.26)
+2026-04-27 15:56:42,184 INFO scanner cooldown skip: XRP/USDT:USDT buy sent at 2026-04-27T15:56:42.179170+00:00
+2026-04-27 15:56:42,198 INFO scanner cycle done in 10.4s; sleeping 890s
