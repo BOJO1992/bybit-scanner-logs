@@ -2316,3 +2316,13 @@
 2026-04-27 01:40:51,118 INFO scanner halt: False — day 2026-04-27 started at 482.25
 2026-04-27 01:40:51,138 INFO scanner cooldown skip: SOL/USDT:USDT sell sent at 2026-04-27T01:40:51.124490+00:00
 2026-04-27 01:40:51,164 INFO scanner cycle done in 10.7s; sleeping 890s
+2026-04-27 01:55:44,374 INFO app.scanner.regime regime=ranging BTC=79157.10 EMA50=77053.07 EMA200=73412.93 ADX=18.0 ATR%=0.94
+2026-04-27 01:55:44,429 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-27 01:55:46,156 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-27 01:55:54,402 INFO scanner scan: 2/20 symbols produced signals
+2026-04-27 01:55:54,402 INFO scanner top: SOL/USDT:USDT sell score=0.62
+2026-04-27 01:55:54,695 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs', 'get_orderbook', 'get_funding_rate', 'get_open_interest']
+2026-04-27 01:55:56,991 INFO scanner AI APPROVE: clean: 0 open, equity=482.24
+2026-04-27 01:55:56,995 INFO scanner halt: False — daily PnL=-0.00% (cap=5.0%)
+2026-04-27 01:55:57,025 INFO scanner cooldown skip: SOL/USDT:USDT sell sent at 2026-04-27T01:55:56.999176+00:00
+2026-04-27 01:55:57,090 INFO scanner cycle done in 15.5s; sleeping 885s
