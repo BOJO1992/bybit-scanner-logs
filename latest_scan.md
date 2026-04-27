@@ -2421,3 +2421,8 @@
 2026-04-27 04:41:03,424 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
 2026-04-27 04:41:03,435 INFO scanner cooldown skip: AAVE/USDT:USDT sell sent at 2026-04-27T04:41:03.427955+00:00
 2026-04-27 04:41:03,477 INFO scanner cycle done in 11.9s; sleeping 889s
+2026-04-27 04:55:56,246 INFO app.scanner.regime regime=ranging BTC=78863.80 EMA50=77120.80 EMA200=73476.48 ADX=19.8 ATR%=0.90
+2026-04-27 04:55:56,346 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-27 04:55:58,318 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-27 04:56:06,338 INFO scanner scan: 0/20 symbols produced signals
+2026-04-27 04:56:06,396 INFO scanner cycle done in 13.5s; sleeping 887s
