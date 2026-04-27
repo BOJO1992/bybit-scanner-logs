@@ -2411,3 +2411,13 @@
 2026-04-27 04:25:54,631 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
 2026-04-27 04:26:03,017 INFO scanner scan: 0/20 symbols produced signals
 2026-04-27 04:26:03,137 INFO scanner cycle done in 12.8s; sleeping 888s
+2026-04-27 04:40:53,185 INFO app.scanner.regime regime=ranging BTC=79033.80 EMA50=77127.47 EMA200=73478.17 ADX=19.8 ATR%=0.89
+2026-04-27 04:40:53,215 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-27 04:40:54,565 INFO app.scanner.universe universe: 20 symbols selected (of 537 candidates)
+2026-04-27 04:41:01,871 INFO scanner scan: 1/20 symbols produced signals
+2026-04-27 04:41:01,871 INFO scanner top: AAVE/USDT:USDT sell score=0.64
+2026-04-27 04:41:02,029 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs', 'get_orderbook', 'get_funding_rate', 'get_open_interest']
+2026-04-27 04:41:03,424 INFO scanner AI APPROVE: clean: 0 open, equity=482.20
+2026-04-27 04:41:03,424 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-27 04:41:03,435 INFO scanner cooldown skip: AAVE/USDT:USDT sell sent at 2026-04-27T04:41:03.427955+00:00
+2026-04-27 04:41:03,477 INFO scanner cycle done in 11.9s; sleeping 889s
