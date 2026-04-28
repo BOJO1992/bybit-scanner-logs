@@ -3221,3 +3221,8 @@
 2026-04-28 13:27:54,991 INFO scanner halt: False — daily PnL=-0.02% (cap=5.0%)
 2026-04-28 13:27:55,002 INFO scanner cooldown skip: XRP/USDT:USDT buy sent at 2026-04-28T13:27:54.994352+00:00
 2026-04-28 13:27:55,016 INFO scanner cycle done in 11.7s; sleeping 889s
+2026-04-28 13:42:45,376 INFO app.scanner.regime regime=ranging BTC=76240.80 EMA50=76998.11 EMA200=73796.01 ADX=14.0 ATR%=1.05
+2026-04-28 13:42:45,391 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-28 13:42:46,671 INFO app.scanner.universe universe: 20 symbols selected (of 543 candidates)
+2026-04-28 13:42:53,796 INFO scanner scan: 0/20 symbols produced signals
+2026-04-28 13:42:53,816 INFO scanner cycle done in 9.7s; sleeping 891s
