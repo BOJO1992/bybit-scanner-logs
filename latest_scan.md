@@ -3136,3 +3136,13 @@
 2026-04-28 10:42:45,860 INFO scanner halt: False — daily PnL=-0.02% (cap=5.0%)
 2026-04-28 10:42:45,867 INFO scanner cooldown skip: HYPE/USDT:USDT buy sent at 2026-04-28T10:42:45.861881+00:00
 2026-04-28 10:42:45,889 INFO scanner cycle done in 10.6s; sleeping 890s
+2026-04-28 10:57:37,387 INFO app.scanner.regime regime=ranging BTC=76540.40 EMA50=77042.63 EMA200=73768.61 ADX=13.5 ATR%=1.04
+2026-04-28 10:57:37,402 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-28 10:57:38,611 INFO app.scanner.universe universe: 20 symbols selected (of 543 candidates)
+2026-04-28 10:57:45,680 INFO scanner scan: 1/20 symbols produced signals
+2026-04-28 10:57:45,680 INFO scanner top: HYPE/USDT:USDT buy score=0.68
+2026-04-28 10:57:45,830 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs', 'get_orderbook', 'get_funding_rate', 'get_open_interest']
+2026-04-28 10:57:46,618 INFO scanner AI APPROVE: clean: 0 open, equity=349.96
+2026-04-28 10:57:46,618 INFO scanner halt: False — daily PnL=-0.02% (cap=5.0%)
+2026-04-28 10:57:46,625 INFO scanner cooldown skip: HYPE/USDT:USDT buy sent at 2026-04-28T10:57:46.619942+00:00
+2026-04-28 10:57:46,639 INFO scanner cycle done in 10.6s; sleeping 890s
