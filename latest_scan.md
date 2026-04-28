@@ -3446,3 +3446,13 @@
 2026-04-28 22:13:13,677 INFO app.scanner.universe universe: 20 symbols selected (of 543 candidates)
 2026-04-28 22:13:20,809 INFO scanner scan: 0/20 symbols produced signals
 2026-04-28 22:13:20,824 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-28 22:28:13,158 INFO app.scanner.regime regime=ranging BTC=76300.10 EMA50=76936.06 EMA200=73865.90 ADX=15.2 ATR%=0.99
+2026-04-28 22:28:13,173 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-28 22:28:14,410 INFO app.scanner.universe universe: 20 symbols selected (of 543 candidates)
+2026-04-28 22:28:21,534 INFO scanner scan: 1/20 symbols produced signals
+2026-04-28 22:28:21,534 INFO scanner top: PUMPFUN/USDT:USDT sell score=0.61
+2026-04-28 22:28:21,634 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs', 'get_orderbook', 'get_funding_rate', 'get_open_interest']
+2026-04-28 22:28:22,314 INFO scanner AI APPROVE: clean: 0 open, equity=349.98
+2026-04-28 22:28:22,315 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-28 22:28:22,321 INFO scanner cooldown skip: PUMPFUN/USDT:USDT sell sent at 2026-04-28T22:28:22.316200+00:00
+2026-04-28 22:28:22,336 INFO scanner cycle done in 10.4s; sleeping 890s
