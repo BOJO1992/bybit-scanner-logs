@@ -2846,3 +2846,8 @@
 2026-04-28 01:12:04,403 INFO app.scanner.universe universe: 20 symbols selected (of 540 candidates)
 2026-04-28 01:12:11,583 INFO scanner scan: 0/20 symbols produced signals
 2026-04-28 01:12:11,597 INFO scanner cycle done in 9.9s; sleeping 891s
+2026-04-28 01:27:03,956 INFO app.scanner.regime regime=ranging BTC=77211.20 EMA50=77090.25 EMA200=73647.57 ADX=14.3 ATR%=1.01
+2026-04-28 01:27:03,970 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-28 01:27:05,305 INFO app.scanner.universe universe: 20 symbols selected (of 540 candidates)
+2026-04-28 01:27:12,487 INFO scanner scan: 0/20 symbols produced signals
+2026-04-28 01:27:12,501 INFO scanner cycle done in 9.8s; sleeping 891s
