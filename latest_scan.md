@@ -3881,3 +3881,13 @@
 2026-04-29 10:59:01,086 INFO scanner halt: False — daily PnL=+0.02% (cap=5.0%)
 2026-04-29 10:59:01,094 INFO scanner cooldown skip: DOGE/USDT:USDT sell sent at 2026-04-29T10:59:01.087493+00:00
 2026-04-29 10:59:01,115 INFO scanner cycle done in 11.0s; sleeping 889s
+2026-04-29 11:13:51,495 INFO app.scanner.regime regime=ranging BTC=77536.10 EMA50=76962.75 EMA200=74057.89 ADX=13.7 ATR%=1.00
+2026-04-29 11:13:51,510 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-29 11:13:52,780 INFO app.scanner.universe universe: 20 symbols selected (of 547 candidates)
+2026-04-29 11:13:59,945 INFO scanner scan: 1/20 symbols produced signals
+2026-04-29 11:13:59,945 INFO scanner top: DOGE/USDT:USDT sell score=0.81
+2026-04-29 11:14:00,228 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs', 'get_orderbook', 'get_funding_rate', 'get_open_interest']
+2026-04-29 11:14:01,184 INFO scanner AI APPROVE: clean: 0 open, equity=350.01
+2026-04-29 11:14:01,184 INFO scanner halt: False — daily PnL=+0.01% (cap=5.0%)
+2026-04-29 11:14:01,192 INFO scanner cooldown skip: DOGE/USDT:USDT sell sent at 2026-04-29T11:14:01.185759+00:00
+2026-04-29 11:14:01,212 INFO scanner cycle done in 10.9s; sleeping 890s
