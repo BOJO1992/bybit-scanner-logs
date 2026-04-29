@@ -3976,3 +3976,13 @@
 2026-04-29 13:59:10,639 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
 2026-04-29 13:59:10,646 INFO scanner cooldown skip: XAUT/USDT:USDT buy sent at 2026-04-29T13:59:10.640262+00:00
 2026-04-29 13:59:10,664 INFO scanner cycle done in 10.7s; sleeping 890s
+2026-04-29 14:14:02,002 INFO app.scanner.regime regime=ranging BTC=76511.70 EMA50=76945.35 EMA200=74017.27 ADX=12.8 ATR%=1.05
+2026-04-29 14:14:02,016 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-29 14:14:03,225 INFO app.scanner.universe universe: 20 symbols selected (of 547 candidates)
+2026-04-29 14:14:10,367 INFO scanner scan: 1/20 symbols produced signals
+2026-04-29 14:14:10,367 INFO scanner top: XAUT/USDT:USDT buy score=0.61
+2026-04-29 14:14:10,640 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs', 'get_orderbook', 'get_funding_rate', 'get_open_interest']
+2026-04-29 14:14:11,353 INFO scanner AI APPROVE: clean: 0 open, equity=349.93
+2026-04-29 14:14:11,354 INFO scanner halt: False — daily PnL=-0.01% (cap=5.0%)
+2026-04-29 14:14:11,360 INFO scanner cooldown skip: XAUT/USDT:USDT buy sent at 2026-04-29T14:14:11.355194+00:00
+2026-04-29 14:14:11,376 INFO scanner cycle done in 10.6s; sleeping 890s
