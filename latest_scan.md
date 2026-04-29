@@ -4061,3 +4061,13 @@
 2026-04-29 17:59:15,538 INFO app.scanner.universe universe: 20 symbols selected (of 547 candidates)
 2026-04-29 17:59:22,684 INFO scanner scan: 0/20 symbols produced signals
 2026-04-29 17:59:22,703 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-29 18:14:15,176 INFO app.scanner.regime regime=ranging BTC=75205.80 EMA50=76853.65 EMA200=74018.19 ADX=14.2 ATR%=1.18
+2026-04-29 18:14:15,211 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-29 18:14:16,489 INFO app.scanner.universe universe: 20 symbols selected (of 547 candidates)
+2026-04-29 18:14:23,664 INFO scanner scan: 5/20 symbols produced signals
+2026-04-29 18:14:23,664 INFO scanner top: SUI/USDT:USDT buy score=0.63
+2026-04-29 18:14:23,770 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs', 'get_orderbook', 'get_funding_rate', 'get_open_interest']
+2026-04-29 18:14:24,517 INFO scanner AI APPROVE: clean: 0 open, equity=349.88
+2026-04-29 18:14:24,518 INFO scanner halt: False — daily PnL=-0.03% (cap=5.0%)
+2026-04-29 18:14:24,526 INFO scanner cooldown skip: SUI/USDT:USDT buy sent at 2026-04-29T18:14:24.519888+00:00
+2026-04-29 18:14:24,547 INFO scanner cycle done in 10.7s; sleeping 890s
