@@ -4442,3 +4442,8 @@
 2026-04-30 10:00:13,884 WARNING app.scanner.signals ohlcv fetch failed for 1000PEPE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777543213919}
 2026-04-30 10:00:18,112 INFO scanner scan: 0/20 symbols produced signals
 2026-04-30 10:00:18,150 INFO scanner cycle done in 10.6s; sleeping 890s
+2026-04-30 10:15:09,605 INFO app.scanner.regime regime=ranging BTC=76020.00 EMA50=76730.49 EMA200=74112.05 ADX=14.7 ATR%=1.11
+2026-04-30 10:15:09,618 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-30 10:15:10,817 INFO app.scanner.universe universe: 20 symbols selected (of 543 candidates)
+2026-04-30 10:15:17,899 INFO scanner scan: 0/20 symbols produced signals
+2026-04-30 10:15:17,913 INFO scanner cycle done in 9.6s; sleeping 891s
