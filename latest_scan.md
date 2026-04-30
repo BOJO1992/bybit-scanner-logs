@@ -4468,3 +4468,8 @@
 2026-04-30 11:00:16,120 WARNING app.scanner.signals ohlcv fetch failed for XRP/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777546816144}
 2026-04-30 11:00:20,638 INFO scanner scan: 0/20 symbols produced signals
 2026-04-30 11:00:20,655 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-30 11:15:13,281 INFO app.scanner.regime regime=ranging BTC=76107.40 EMA50=76733.92 EMA200=74112.92 ADX=14.7 ATR%=1.11
+2026-04-30 11:15:13,299 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-30 11:15:14,506 INFO app.scanner.universe universe: 20 symbols selected (of 543 candidates)
+2026-04-30 11:15:21,676 INFO scanner scan: 0/20 symbols produced signals
+2026-04-30 11:15:21,696 INFO scanner cycle done in 9.9s; sleeping 891s
