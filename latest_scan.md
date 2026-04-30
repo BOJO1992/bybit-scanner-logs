@@ -4371,3 +4371,10 @@
 2026-04-30 07:30:01,958 INFO app.scanner.universe universe: 20 symbols selected (of 548 candidates)
 2026-04-30 07:30:09,136 INFO scanner scan: 0/20 symbols produced signals
 2026-04-30 07:30:09,152 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-30 07:45:01,527 INFO app.scanner.regime regime=ranging BTC=76040.80 EMA50=76756.05 EMA200=74038.51 ADX=14.9 ATR%=1.15
+2026-04-30 07:45:01,557 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-30 07:45:02,836 INFO app.scanner.universe universe: 20 symbols selected (of 548 candidates)
+2026-04-30 07:45:07,599 WARNING app.scanner.signals ohlcv fetch failed for PENGU/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777535107608}
+2026-04-30 07:45:08,795 WARNING app.scanner.signals ohlcv fetch failed for ZEC/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777535108804}
+2026-04-30 07:45:10,005 INFO scanner scan: 0/20 symbols produced signals
+2026-04-30 07:45:10,019 INFO scanner cycle done in 9.7s; sleeping 891s
