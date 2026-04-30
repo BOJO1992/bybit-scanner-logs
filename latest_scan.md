@@ -4389,3 +4389,9 @@
 2026-04-30 08:00:09,402 WARNING app.scanner.signals ohlcv fetch failed for XAUT/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777536009420}
 2026-04-30 08:00:10,913 INFO scanner scan: 0/20 symbols produced signals
 2026-04-30 08:00:10,931 INFO scanner cycle done in 9.8s; sleeping 891s
+2026-04-30 08:15:03,299 INFO app.scanner.regime regime=ranging BTC=76046.90 EMA50=76731.55 EMA200=74112.32 ADX=15.0 ATR%=1.09
+2026-04-30 08:15:03,314 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-30 08:15:04,661 INFO app.scanner.universe universe: 20 symbols selected (of 548 candidates)
+2026-04-30 08:15:08,409 WARNING app.scanner.signals ohlcv fetch failed for ADA/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777536908430}
+2026-04-30 08:15:11,724 INFO scanner scan: 0/20 symbols produced signals
+2026-04-30 08:15:11,750 INFO scanner cycle done in 9.7s; sleeping 891s
