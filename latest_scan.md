@@ -4423,3 +4423,9 @@
 2026-04-30 09:15:07,738 INFO app.scanner.universe universe: 20 symbols selected (of 543 candidates)
 2026-04-30 09:15:14,816 INFO scanner scan: 0/20 symbols produced signals
 2026-04-30 09:15:14,831 INFO scanner cycle done in 9.7s; sleeping 891s
+2026-04-30 09:30:07,451 INFO app.scanner.regime regime=ranging BTC=76202.20 EMA50=76737.64 EMA200=74113.87 ADX=14.9 ATR%=1.10
+2026-04-30 09:30:07,467 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-30 09:30:08,782 INFO app.scanner.universe universe: 20 symbols selected (of 543 candidates)
+2026-04-30 09:30:10,874 WARNING app.scanner.signals ohlcv fetch failed for DOGE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777541410909}
+2026-04-30 09:30:15,689 INFO scanner scan: 0/20 symbols produced signals
+2026-04-30 09:30:15,705 INFO scanner cycle done in 9.7s; sleeping 891s
