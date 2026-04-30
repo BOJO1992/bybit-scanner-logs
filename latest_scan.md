@@ -4407,3 +4407,14 @@
 2026-04-30 08:45:11,159 WARNING app.scanner.signals ohlcv fetch failed for ORCA/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777538711179}
 2026-04-30 08:45:13,269 INFO scanner scan: 0/20 symbols produced signals
 2026-04-30 08:45:13,283 INFO scanner cycle done in 9.5s; sleeping 891s
+2026-04-30 09:00:05,874 INFO app.scanner.regime regime=ranging BTC=76012.00 EMA50=76730.18 EMA200=74111.97 ADX=15.0 ATR%=1.09
+2026-04-30 09:00:05,894 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-04-30 09:00:07,304 INFO app.scanner.universe universe: 20 symbols selected (of 543 candidates)
+2026-04-30 09:00:09,836 WARNING app.scanner.signals ohlcv fetch failed for XRP/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777539609861}
+2026-04-30 09:00:10,032 WARNING app.scanner.signals ohlcv fetch failed for 1000PEPE/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777539610057}
+2026-04-30 09:00:11,137 WARNING app.scanner.signals ohlcv fetch failed for NAORIS/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777539611162}
+2026-04-30 09:00:11,937 WARNING app.scanner.signals ohlcv fetch failed for ORCA/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777539611963}
+2026-04-30 09:00:12,138 WARNING app.scanner.signals ohlcv fetch failed for XAUT/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777539612163}
+2026-04-30 09:00:13,041 WARNING app.scanner.signals ohlcv fetch failed for ZEC/USDT:USDT: bybit {"retCode":10006,"retMsg":"Too many visits. Exceeded the API Rate Limit.","result":{},"retExtInfo":{},"time":1777539613067}
+2026-04-30 09:00:13,949 INFO scanner scan: 0/20 symbols produced signals
+2026-04-30 09:00:13,966 INFO scanner cycle done in 9.5s; sleeping 891s
