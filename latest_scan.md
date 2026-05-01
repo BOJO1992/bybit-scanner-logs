@@ -5048,3 +5048,13 @@
 2026-05-01 14:01:54,037 INFO scanner halt: False — daily PnL=+0.03% (cap=5.0%)
 2026-05-01 14:01:54,043 INFO scanner cooldown skip: ETH/USDT:USDT sell sent at 2026-05-01T14:01:54.038054+00:00
 2026-05-01 14:01:54,057 INFO scanner cycle done in 12.2s; sleeping 888s
+2026-05-01 14:16:43,501 INFO app.scanner.regime regime=ranging BTC=78616.60 EMA50=76820.62 EMA200=74321.19 ADX=15.6 ATR%=1.04
+2026-05-01 14:16:43,515 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-05-01 14:16:44,807 INFO app.scanner.universe universe: 20 symbols selected (of 544 candidates)
+2026-05-01 14:16:51,977 INFO scanner scan: 2/20 symbols produced signals
+2026-05-01 14:16:51,977 INFO scanner top: ETH/USDT:USDT sell score=0.64
+2026-05-01 14:16:52,598 INFO app.ai_confirm.mcp_client MCP tools: ['get_account_snapshot', 'get_market_snapshot', 'get_trade_plan', 'read_recent_logs', 'get_orderbook', 'get_funding_rate', 'get_open_interest']
+2026-05-01 14:16:53,350 INFO scanner AI APPROVE: clean: 0 open, equity=350.02
+2026-05-01 14:16:53,351 INFO scanner halt: False — daily PnL=+0.03% (cap=5.0%)
+2026-05-01 14:16:53,357 INFO scanner cooldown skip: ETH/USDT:USDT sell sent at 2026-05-01T14:16:53.352261+00:00
+2026-05-01 14:16:53,376 INFO scanner cycle done in 11.2s; sleeping 889s
