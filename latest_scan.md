@@ -4923,3 +4923,8 @@
 2026-05-01 08:46:38,493 INFO scanner halt: False — daily PnL=+0.01% (cap=5.0%)
 2026-05-01 08:46:38,503 INFO scanner cooldown skip: BR/USDT:USDT sell sent at 2026-05-01T08:46:38.495656+00:00
 2026-05-01 08:46:38,522 INFO scanner cycle done in 11.0s; sleeping 890s
+2026-05-01 09:01:29,928 INFO app.scanner.regime regime=ranging BTC=77346.10 EMA50=76744.41 EMA200=74271.93 ADX=13.6 ATR%=0.97
+2026-05-01 09:01:29,964 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-05-01 09:01:31,409 INFO app.scanner.universe universe: 20 symbols selected (of 544 candidates)
+2026-05-01 09:01:39,312 INFO scanner scan: 0/20 symbols produced signals
+2026-05-01 09:01:39,327 INFO scanner cycle done in 10.7s; sleeping 890s
