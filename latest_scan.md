@@ -4788,3 +4788,8 @@
 2026-05-01 02:46:17,692 INFO scanner halt: False — day 2026-05-01 started at 349.91
 2026-05-01 02:46:17,702 INFO scanner cooldown skip: HYPE/USDT:USDT sell sent at 2026-05-01T02:46:17.694944+00:00
 2026-05-01 02:46:17,716 INFO scanner cycle done in 10.5s; sleeping 890s
+2026-05-01 03:01:09,181 INFO app.scanner.regime regime=ranging BTC=76528.10 EMA50=76682.65 EMA200=74181.65 ADX=11.9 ATR%=0.99
+2026-05-01 03:01:09,195 INFO scanner regime=ranging; strategies=['mean_reversion']
+2026-05-01 03:01:10,527 INFO app.scanner.universe universe: 20 symbols selected (of 544 candidates)
+2026-05-01 03:01:17,718 INFO scanner scan: 0/20 symbols produced signals
+2026-05-01 03:01:17,751 INFO scanner cycle done in 9.9s; sleeping 891s
